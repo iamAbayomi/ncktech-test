@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="app">
     <div class="container">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+      <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet"> -->
       <div id ="menu-bar" class="menu-bar"> 
           <div class="sub-menu">
             <p>TRIPS </p>
@@ -25,10 +25,10 @@
        
         <div class="payment-information-section">
             <div class="card-type">
-              <p id="payment-title">
+              <p class="payment-title">
                 Payment Information
               </p>
-              <p id="payment-subtitle">
+              <p class="payment-subtitle">
                 Choose your method of payment
               </p>
               <img class="credit-card-image" src="/card_image.jpg" alt="Credit Card image">
@@ -92,7 +92,7 @@
                 <p class="promotional-code-text bold-payment-information"> 
                     Promotional Code
                 </p>
-                <p id="promotional-code-subttilte-text"> 
+                <p class="promotional-code-subttilte-text light-text"> 
                     :Z4KXLM94
                 </p>
               </div>
@@ -156,9 +156,8 @@ p{
 .sub-menu p{
   margin: 20px;
   font-size: 14px;
-  color:darkgray;
-  font-family: Helvetica;
-  font-weight: 800;
+  color:rgba(169, 169, 169, 0.637);
+  font-weight: 500;
 }
 
 .profile-image{
@@ -176,6 +175,15 @@ p{
 
 .credit-card-image{
   width: 400px;
+}
+
+.payment-title{
+  font-size: 18px;
+}
+
+.payment-subtitle{
+  font-size: 14px;
+  color: lightgray;
 }
 
 .payment-type{
@@ -208,8 +216,8 @@ p{
 
 .figure{
   float: right;
-  color:#424859;
-  font-weight: bold;
+  /* color:#424859; */
+  font-weight: 700;
 }
 
 .payment-details-section{
@@ -218,8 +226,12 @@ p{
 
 .bold-payment-information{
    font-size: 16px;
-   font-weight: 800;
+   font-weight: 600;
    font-family: 'Fira Sans', sans-serif;
+}
+
+.light-text{
+  color: hsla(0, 0%, 83%, 0.836);
 }
 
 .payment-accept-section{
