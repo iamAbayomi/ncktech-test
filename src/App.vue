@@ -2,7 +2,7 @@
   <div id="app" class="app">
     <div class="container">
       <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <div id ="menu-bar" class="menu-bar"> 
           <div class="sub-menu">
@@ -45,7 +45,7 @@
                 </div>
                 <div class="card-input-details">
                     <form action="/card-details">
-                      <div class="first-input-field flex-row">
+                      <div class="first-input-field input-field-row">
                           <div class="input-field">
                             <label class="light-label" for="credit-card-no">Credit card number</label>
                             <input type="text" id="credit-card-no" class="text-input-field" value="4324 5433 9382 1030">
@@ -55,7 +55,7 @@
                             <input type="text" id="expiration-date" class="text-input-field" value="03/24"><br><br>
                           </div>
                       </div>    
-                      <div class="second-input-field flex-row">
+                      <div class="second-input-field input-field-row">
                           <div class="input-field">
                             <label class="light-label" for="security-code">Security code</label>
                             <input type="text" id="security-code" class="text-input-field" value="420">
@@ -195,7 +195,7 @@ input:focus, textarea:focus, select:focus, button:focus{
 }
 
 .credit-card-image{
-  width: 400px;
+  max-width: 400px;
 }
 
 .payment-title{
@@ -252,7 +252,7 @@ input:focus, textarea:focus, select:focus, button:focus{
 }
 
 .card-details{
-  width: 600px;
+  /* width: 600px; */
 }
 
 .card-input-details{
@@ -279,6 +279,11 @@ input:focus, textarea:focus, select:focus, button:focus{
   border-style: solid;
   margin: 10px 0px 10px 0px;
   width: 250px;
+}
+
+.input-field-row{
+  display: flex;
+  justify-content: space-between;
 }
 
 .flex-only{
@@ -386,11 +391,95 @@ input:focus, textarea:focus, select:focus, button:focus{
   /* display: flex; */
 }
 
-@media screen and (max-width: 450px){
-
-}
-
 @media screen and (max-width: 1150px){
+  .app{
+      margin: auto;
+      max-width: 750px;
+  }
+  
+  .payment-information-section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 20px 0px;
+  }
+
+  .credit-card-image{
+      max-width: 400px;
+      margin: auto;
+  }
+
+  .long-blue-button{
+        color: white;
+        width: 400px;
+        margin: auto;
+    }
+
+  .input-field-row{
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0px;
+  }
+
+  .payment-type{
+      display: none;
+      /* float: none; */
+  }
+  
+  .text-input-field{
+    width: 400px;
+  }
 
 }
+
+
+
+@media screen and (max-width: 455px){
+  .app{
+      margin: auto;
+      max-width: 330px;
+  }
+  
+  .long-blue-button{
+      color: white;
+      width: 300px;
+  }
+  
+  .payment-type{
+      /* display: none; */
+  }
+
+  .sub-menu{
+      display: none;
+      /* display: flex;
+      float: right;
+      margin: 0px 0px 80px 0px; */
+  }
+  .credit-card-image{
+      width: 280px;
+  }
+
+  .input-field{
+    margin: auto;
+  }
+
+  .text-input-field{
+    width: 280px;
+  }
+
+
+  .payment-accept-section{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 30px 0px;
+  }
+
+  .blue-button{
+    /* margin-top: 10px; */
+    margin: auto;
+  }
+
+
+}
+
 </style>
