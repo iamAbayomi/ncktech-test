@@ -35,9 +35,9 @@
             </div>
             <div class="card-details">
                 <div class="payment-type">
-                    <img class="payment-logo" src="/visa-icon.png" alt="Visa">
-                    <img class="payment-logo" src="/discover-logo.png" alt="Discover">
-                    <img class="payment-logo" src="/paypal-logo.png" alt="PayPal">
+                    <img class="payment-logo visa-image" src="/visa-icon.png" alt="Visa">
+                    <img class="payment-logo discover-image" src="/discover-logo.png" alt="Discover">
+                    <img class="payment-logo paypal-image" src="/paypal-logo.png" alt="PayPal">
                 </div>
                 <div class="card-input-details">
                     <form action="/card-details">
@@ -90,10 +90,10 @@
           <div class="sub-total-div flex-row">
               <div class="promotional-code flex-row">
                 <p class="promotional-code-text bold-payment-information"> 
-                    Promotional Code
+                    Promotional Code: 
                 </p>
                 <p class="promotional-code-subttilte-text light-text"> 
-                    :Z4KXLM94
+                     Z4KXLM94
                 </p>
               </div>
               <div class="price"> 
@@ -131,7 +131,6 @@ export default {
 
 <style>
 .body{
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 p{
@@ -148,20 +147,21 @@ p{
 }
 
 .menu-bar{
- display: flex;
- float: right;
- font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  float: right;
+  margin: 0px 0px 90px 0px;
 }
 
 .sub-menu p{
   margin: 20px;
-  font-size: 14px;
-  color:rgba(169, 169, 169, 0.637);
-  font-weight: 500;
+  font-size: 17px;
+  color:#03112cfd;
+  /* font-weight: 550; */
 }
 
 .profile-image{
-  width: 40px;
+  width: 50px ;
+  margin: 0px 0px 0px 50px;
 }
 
 .main-details{
@@ -171,6 +171,7 @@ p{
 .payment-information-section{
   display: flex;
   justify-content: space-between;
+  margin: 20px 0px;
 }
 
 .credit-card-image{
@@ -197,6 +198,21 @@ p{
   /* border:1px solid; */
 }
 
+.visa-image{
+  margin: 0px 0px 20px 0px;
+}
+.discover-image{
+  /* border:1px solid; */
+  width: 50px;
+  margin: 0px 0px 30px 10px;
+}
+
+.paypal-image{
+  /* border:1px solid; */
+  width: 70px;
+  margin: -80px 0px 0px 60px;
+}
+
 .card-type{
   clear: both;
 }
@@ -221,19 +237,17 @@ p{
 }
 
 .division{
-  color: lightgray;
-  border: solid lightgray;
-  border-width: 0px 0px 1px 0px ;
-
+  border: solid #d3d3d3;
+  border-width: 0px 0px 0.1px 0px ;
 }
 
 .payment-details-section{
-
+  margin: 30px 0px 60px 0px;
 }
 
 .bold-payment-information{
    font-size: 16px;
-   font-weight: 600;
+   font-weight: 550;
    font-family: 'Fira Sans', sans-serif;
 }
 
@@ -244,7 +258,14 @@ p{
 .payment-accept-section{
   display: flex;
   justify-content: space-between;
+  margin: 30px 0px;
 }
+
+.payment-accept-section p{
+  font-weight: 600;
+  font-size: 18px;
+}
+
 
 .blue-button{
   color: white;
