@@ -67,17 +67,23 @@
               <p id="subtotal-text"> 
                 Subtotal
               </p>
-              <p class="subtotal-value figure"> 
-                #2,497.00
-              </p>
+              <div class="price"> 
+                  <img class="naira-image" src="/naira-image.jpg">
+                  <p class="subtotal-value figure"> 
+                    2,497.00
+                  </p>
+              </div> 
           </div>
           <div class="sub-total-div flex-row">
               <p id="estimated-tax-text"> 
                   Estimated TAX
               </p>
-              <p class="estimated-tax-value figure"> 
-                  #119.64
-              </p>
+              <div class="price"> 
+                  <img class="naira-image" src="/naira-image.jpg">
+                  <p class="estimated-tax-value figure"> 
+                    119.64
+                  </p>
+              </div> 
           </div>
           <div class="sub-total-div flex-row">
               <div class="promotional-code flex-row">
@@ -88,9 +94,12 @@
                     :Z4KXLM94
                 </p>
               </div>
-              <p class="promotional-code-value figure"> 
-                  #-60.00
-              </p>
+              <div class="price"> 
+                  <img class="naira-image" src="/naira-image.jpg">    
+                  <p class="promotional-code-value figure"> 
+                      -60.00
+                  </p>
+              </div> 
           </div>
         </div>
         
@@ -99,8 +108,11 @@
         <div class="payment-accept-section"> 
             <input type="submit" class="blue-button" value="Complete payment">
             <div class="total-figure flex-row">
-                <p id="payment-accept-button">TOTAL</p>
-                <p id="payment-accept-text">#2556.64</p>
+                <p id="payment-accept-total">TOTAL:</p>
+                <div class="price payment-section"> 
+                  <img class="naira-image" src="/naira-image.jpg">    
+                  <p class="payment-accept-text">2556.64</p>
+              </div> 
             </div>
         </div>
       </div>
@@ -139,7 +151,8 @@ export default {
   margin: 20px;
   font-size: 14px;
   color:darkgray;
-  font-weight: bold;
+  font-family: Helvetica;
+  font-weight: 800;
 }
 
 .profile-image{
@@ -189,6 +202,8 @@ export default {
 
 .figure{
   float: right;
+  color:#424859;
+  font-weight: bold;
 }
 
 .payment-accept-section{
@@ -210,6 +225,30 @@ export default {
 .long-blue-button{
   color: white;
   width: 600px;
+}
+
+.price{
+  /* border: 1px solid;
+  border-width: 1px; */
+  display: flex;
+  align-items: center;
+}
+
+.naira-image{
+  /* border: 1px solid;
+  border-width: 1px; */
+  margin: 18px 1px 18px 0px;
+  width: 11px;
+}
+
+
+.total-figure{
+  /* border: 1px solid;
+  border-width: 1px; */
+}
+
+.payment-section{
+  /* display: flex; */
 }
 
 </style>
