@@ -167,6 +167,7 @@ export default {
   /* height: 50px; */
   margin: 10px;
   width: 40px;
+  border:1px solid;
 }
 
 .card-type{
