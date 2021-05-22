@@ -54,7 +54,7 @@
                         <input type="text" id="Postal Code" name=""><br><br>
                       </div>
                         <p>Use this card for next time purchase </p>
-                        <input type="submit" value="Add Card">
+                        <input type="submit" class="long-blue-button blue-button" value="Add Card">
                     </form>
                 </div>
             </div>
@@ -97,7 +97,7 @@
         <div class="menu-line"> ------ </div>
         
         <div class="payment-accept-section"> 
-            <button class="blue-button"> Complete Payment</button>
+            <input type="submit" class="blue-button" value="Complete payment">
             <div class="total-figure flex-row">
                 <p id="payment-accept-button">TOTAL</p>
                 <p id="payment-accept-text">#2556.64</p>
@@ -167,11 +167,15 @@ export default {
   /* height: 50px; */
   margin: 10px;
   width: 40px;
-  border:1px solid;
+  /* border:1px solid; */
 }
 
 .card-type{
   clear: both;
+}
+
+.card-details{
+  width: 600px;
 }
 
 .card-input-details{
@@ -190,6 +194,22 @@ export default {
 .payment-accept-section{
   display: flex;
   justify-content: space-between;
+}
+
+.blue-button{
+  color: white;
+  width: 200px;
+  height: 44px;
+  font-size: 16px;
+  background: hsl(226, 78%, 42%);
+  border-color:#1A48E2;
+  border-width: 0px;
+  border-radius: 0px;
+}
+
+.long-blue-button{
+  color: white;
+  width: 600px;
 }
 
 </style>
