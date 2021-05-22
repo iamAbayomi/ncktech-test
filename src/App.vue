@@ -1,6 +1,8 @@
 <template>
   <div id="app" class="app">
     <div class="container">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
       <div id ="menu-bar" class="menu-bar"> 
           <div class="sub-menu">
             <p>TRIPS </p>
@@ -64,7 +66,7 @@
         
         <div class="payment-details-section">
           <div class="sub-total-div flex-row">
-              <p id="subtotal-text"> 
+              <p class="subtotal-text bold-payment-information"> 
                 Subtotal
               </p>
               <div class="price"> 
@@ -75,7 +77,7 @@
               </div> 
           </div>
           <div class="sub-total-div flex-row">
-              <p id="estimated-tax-text"> 
+              <p class="estimated-tax-text bold-payment-information"> 
                   Estimated TAX
               </p>
               <div class="price"> 
@@ -87,7 +89,7 @@
           </div>
           <div class="sub-total-div flex-row">
               <div class="promotional-code flex-row">
-                <p id="promotional-code-text"> 
+                <p class="promotional-code-text bold-payment-information"> 
                     Promotional Code
                 </p>
                 <p id="promotional-code-subttilte-text"> 
@@ -130,6 +132,10 @@ export default {
 <style>
 .body{
   font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .app{
@@ -204,6 +210,16 @@ export default {
   float: right;
   color:#424859;
   font-weight: bold;
+}
+
+.payment-details-section{
+
+}
+
+.bold-payment-information{
+   font-size: 16px;
+   font-weight: 800;
+   font-family: 'Fira Sans', sans-serif;
 }
 
 .payment-accept-section{
