@@ -41,22 +41,29 @@
                 </div>
                 <div class="card-input-details">
                     <form action="/card-details">
-                      <div>
-                        <label for="credit-card-no">Credit Card Number</label>
-                        <input type="text" id="credit-card-no" name="">
-                        
-                        <label for="expiration-date">Expiration Date</label>
-                        <input type="text" id="expiration-date" name=""><br><br>
+                      <div class="first-input-field flex-row">
+                          <div class="input-field">
+                            <label class="light-label" for="credit-card-no">Credit card number</label>
+                            <input type="text" id="credit-card-no" class="text-input-field" name="">
+                          </div>  
+                          <div class="input-field">
+                            <label class="light-label" for="expiration-date">Expiration date</label>
+                            <input type="text" id="expiration-date" class="text-input-field" name=""><br><br>
+                          </div>
+                      </div>    
+                      <div class="second-input-field flex-row">
+                          <div class="input-field">
+                            <label class="light-label" for="security-code">Security code</label>
+                            <input type="text" id="security-code" class="text-input-field" name="">
+                          </div>
+                          <div class="input-field">
+                            <label class="light-label" for="postal-code">Postal Code</label>
+                            <input type="text" id="Postal Code" class="text-input-field" name=""><br><br>
+                          </div>
                       </div>
-                      <div>
-                        <label for="security-code">Security Code</label>
-                        <input type="text" id="security-code" name="">
-      
-                        <label for="postal-code">Postal Code</label>
-                        <input type="text" id="Postal Code" name=""><br><br>
-                      </div>
-                        <p>Use this card for next time purchase </p>
-                        <input type="submit" class="long-blue-button blue-button" value="Add Card">
+                      <p>Use this card for next time purchase </p>
+                      <input type="submit" class="long-blue-button blue-button" value="Add Card">
+                
                     </form>
                 </div>
             </div>
@@ -137,6 +144,13 @@ p{
   font-family: 'Fira Sans', sans-serif;
 }
 
+/* Text Fields Style*/
+input:focus, textarea:focus, select:focus, button:focus{
+    outline: #2762BC;
+    border:1px solid #2762BC;
+    box-shadow: 0 0 4px #719ECE;
+}
+
 .app{
   margin: auto;
   max-width: 1300px;
@@ -149,7 +163,7 @@ p{
 .menu-bar{
   display: flex;
   float: right;
-  margin: 0px 0px 90px 0px;
+  margin: 0px 0px 80px 0px;
 }
 
 .sub-menu p{
@@ -223,6 +237,33 @@ p{
 
 .card-input-details{
   clear: both;
+}
+
+.light-label{
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 0px 5px 0px;
+  font-family: 'Fira Sans', sans-serif;
+  color: hsl(227, 71%, 11%);
+}
+
+.text-input-field{
+  height: 38px;
+  padding-left: 10px;
+  border-color:#c7d3e6;
+  border-radius: 4px;
+  border-style: solid;
+  margin: 10px 0px 10px 0px;
+  width: 250px;
+}
+
+.first-input-field{
+  /* margin: 20px 0px 15px 0px; */
+}
+
+.second-input-field{
+  /* margin: 20px 0px 15px 0px; */
 }
 
 .flex-row{
