@@ -14,7 +14,7 @@
           <div class="sub-menu">
             <p>BOOKINGS </p>
           </div>
-          <div class="sub-menu">
+          <div class="sub-menu show">
             <img class="profile-image" src="/cardi-profile-image.png" alt="profile-image">
           </div>
       </div>
@@ -422,7 +422,7 @@ input:focus, textarea:focus, select:focus, button:focus{
   }
 
   .payment-type{
-      display: none;
+      /* display: none; */
       /* float: none; */
   }
   
@@ -451,10 +451,8 @@ input:focus, textarea:focus, select:focus, button:focus{
 
   .sub-menu{
       display: none;
-      /* display: flex;
-      float: right;
-      margin: 0px 0px 80px 0px; */
   }
+
   .credit-card-image{
       width: 280px;
   }
