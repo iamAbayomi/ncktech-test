@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <div id ="menu-bar"> 
+      <div id ="menu-bar" class="menu-bar"> 
           <div class="sub-menu">
             TRIPS
           </div>
@@ -108,5 +108,14 @@ export default {
 </script>
 
 <style>
+.menu-bar{
+ display: flex;
+ float: right;
+}
+
+.sub-menu{
+  margin: 16px;
+  font-weight: bold;
+}
 
 </style>
