@@ -14,8 +14,13 @@
             profile-image
           </div>
       </div>
+
+
       <div id="main-details">
-        <div id="payment-information">
+       
+        <div class="menu-line"> ------ </div>
+       
+        <div id="payment-information-section">
             <div class="card-type">
               <p id="payment-title">
                 Payment Information
@@ -47,8 +52,10 @@
                 </div>
             </div>
         </div>
-
-        <div id="payment-details">
+        
+        <div class="menu-line"> ------ </div>
+        
+        <div id="payment-details-section">
           <div id="sub-total-div">
               <p id="subtotal-text"> 
                 Subtotal
@@ -77,7 +84,18 @@
               </p>
           </div>
         </div>
+        
+        <div class="menu-line"> ------ </div>
+        
+        <div class="payment-accept-section"> 
+            <button class="blue-button"> Complete Payment</button>
+            <p id="payment-accept-button">TOTAL</p>
+            <p id="payment-accept-text">2556.64</p>
+        </div>
       </div>
+      
+
+      
 
   </div>
 </template>
