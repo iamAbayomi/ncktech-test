@@ -21,7 +21,7 @@
 
       <div id="main-details" class="main-details">
        
-        <div class="menu-line"> ------ </div>
+        <div class="division">  </div>
        
         <div class="payment-information-section">
             <div class="card-type">
@@ -62,7 +62,7 @@
             </div>
         </div>
         
-        <div class="menu-line"> ------ </div>
+        <div class="division">  </div>
         
         <div class="payment-details-section">
           <div class="sub-total-div flex-row">
@@ -105,7 +105,7 @@
           </div>
         </div>
         
-        <div class="menu-line"> ------ </div>
+        <div class="division">  </div>
         
         <div class="payment-accept-section"> 
             <input type="submit" class="blue-button" value="Complete payment">
@@ -218,6 +218,13 @@ p{
   float: right;
   /* color:#424859; */
   font-weight: 700;
+}
+
+.division{
+  color: lightgray;
+  border: solid lightgray;
+  border-width: 0px 0px 1px 0px ;
+
 }
 
 .payment-details-section{
