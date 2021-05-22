@@ -35,7 +35,7 @@
                 <div id="payment-type">
                     <img src="" alt="Visa">
                     <img src="" alt="Discover">
-                    <img src="" alt="PayPal">
+                    <img class="payment-logo" src="/paypal-logo.svg" alt="PayPal">
                 </div>
                 <div id="card-input-details">
                     <form action="/card-details">
