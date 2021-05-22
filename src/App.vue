@@ -37,33 +37,40 @@
                 <div class="payment-type">
                     <img class="payment-logo visa-image" src="/visa-icon.png" alt="Visa">
                     <img class="payment-logo discover-image" src="/discover-logo.png" alt="Discover">
+                  <div class="paypal-selector">  
+                    <input type="radio" id="paypal-radio-button" class="block-display paypal-radio-button" name="gender" value="paypal">
                     <img class="payment-logo paypal-image" src="/paypal-logo.png" alt="PayPal">
+                  </div>
                 </div>
                 <div class="card-input-details">
                     <form action="/card-details">
                       <div class="first-input-field flex-row">
                           <div class="input-field">
                             <label class="light-label" for="credit-card-no">Credit card number</label>
-                            <input type="text" id="credit-card-no" class="text-input-field" name="">
+                            <input type="text" id="credit-card-no" class="text-input-field" value="4324 5433 9382 1030">
                           </div>  
                           <div class="input-field">
                             <label class="light-label" for="expiration-date">Expiration date</label>
-                            <input type="text" id="expiration-date" class="text-input-field" name=""><br><br>
+                            <input type="text" id="expiration-date" class="text-input-field" value="03/24"><br><br>
                           </div>
                       </div>    
                       <div class="second-input-field flex-row">
                           <div class="input-field">
                             <label class="light-label" for="security-code">Security code</label>
-                            <input type="text" id="security-code" class="text-input-field" name="">
+                            <input type="text" id="security-code" class="text-input-field" value="420">
                           </div>
                           <div class="input-field">
                             <label class="light-label" for="postal-code">Postal Code</label>
-                            <input type="text" id="Postal Code" class="text-input-field" name=""><br><br>
+                            <input type="text" id="Postal Code" class="text-input-field" value="10119"><br><br>
                           </div>
                       </div>
-                      <p>Use this card for next time purchase </p>
-                      <input type="submit" class="long-blue-button blue-button" value="Add Card">
-                
+                      <div class="flex-only">
+                          <input type="radio" id="card-radio-button" class="block-display" name="gender" value="card">
+                          <p>Use this card for next time purchase </p>
+                        </div> 
+                         
+                       <input type="submit" class="long-blue-button blue-button" value="Add Card">
+                      
                     </form>
                 </div>
             </div>
@@ -202,6 +209,9 @@ input:focus, textarea:focus, select:focus, button:focus{
 }
 
 .payment-type{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   float: right;
 }
 
@@ -221,10 +231,20 @@ input:focus, textarea:focus, select:focus, button:focus{
   margin: 0px 0px 30px 10px;
 }
 
+.paypal-selector{
+  /* border:1px solid; */
+  display: flex;
+  margin: 0px 0px 30px 60px;
+}
+
+.paypal-radio-button{
+  margin: 30px 0px 0px 0px;  
+}
+
 .paypal-image{
   /* border:1px solid; */
   width: 70px;
-  margin: -80px 0px 0px 60px;
+  margin: 00px 0px -10px 20px;
 }
 
 .card-type{
@@ -251,11 +271,18 @@ input:focus, textarea:focus, select:focus, button:focus{
 .text-input-field{
   height: 38px;
   padding-left: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  color: hsl(227, 71%, 11%);
+  background-color: #f0f1f3;
   border-color:#c7d3e6;
   border-radius: 4px;
   border-style: solid;
   margin: 10px 0px 10px 0px;
   width: 250px;
+}
+
+.flex-only{
+  display: flex;
 }
 
 .first-input-field{
