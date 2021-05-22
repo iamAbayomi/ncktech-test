@@ -386,4 +386,11 @@ input:focus, textarea:focus, select:focus, button:focus{
   /* display: flex; */
 }
 
+@media screen and (max-width: 450px){
+
+}
+
+@media screen and (max-width: 1150px){
+
+}
 </style>
