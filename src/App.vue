@@ -29,13 +29,13 @@
               <p id="payment-subtitle">
                 Choose your method of payment
               </p>
-              <img src="" alt="Credit Card image">
+              <img class="credit-card-image" src="/card_image.jpg" alt="Credit Card image">
             </div>
             <div class="card-details">
                 <div class="payment-type">
-                    <img src="" alt="Visa">
+                    <img class="payment-logo" src="/visa-icon.png" alt="Visa">
                     <img class="payment-logo" src="/discover-logo.png" alt="Discover">
-                    <img class="payment-logo" src="/paypal-logo.svg" alt="PayPal">
+                    <img class="payment-logo" src="/paypal-logo.png" alt="PayPal">
                 </div>
                 <div class="card-input-details">
                     <form action="/card-details">
@@ -155,9 +155,12 @@ export default {
   justify-content: space-between;
 }
 
+.credit-card-image{
+  width: 400px;
+}
+
 .payment-type{
   float: right;
-  border: solid 1px;
 }
 
 .payment-logo{
