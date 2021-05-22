@@ -1,8 +1,9 @@
 <template>
   <div id="app" class="app">
     <div class="container">
-      <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet"> -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <div id ="menu-bar" class="menu-bar"> 
           <div class="sub-menu">
             <p>TRIPS </p>
@@ -65,8 +66,8 @@
                           </div>
                       </div>
                       <div class="flex-only">
-                          <input type="radio" id="card-radio-button" class="block-display" name="gender" value="card">
-                          <p>Use this card for next time purchase </p>
+                          <input type="radio" id="card-radio-button" class="block-display" name="gender" value="card" checked="checked">
+                          <p class="card-info">Use this card for next time purchase </p>
                         </div> 
                          
                        <input type="submit" class="long-blue-button blue-button" value="Add Card">
@@ -84,9 +85,8 @@
                 Subtotal
               </p>
               <div class="price"> 
-                  <img class="naira-image" src="/naira-image.jpg">
                   <p class="subtotal-value figure"> 
-                    2,497.00
+                    <span>&#8358;</span>2,497.00
                   </p>
               </div> 
           </div>
@@ -95,9 +95,9 @@
                   Estimated TAX
               </p>
               <div class="price"> 
-                  <img class="naira-image" src="/naira-image.jpg">
+                  
                   <p class="estimated-tax-value figure"> 
-                    119.64
+                    <span>&#8358;</span>119.64
                   </p>
               </div> 
           </div>
@@ -111,9 +111,8 @@
                 </p>
               </div>
               <div class="price"> 
-                  <img class="naira-image" src="/naira-image.jpg">    
                   <p class="promotional-code-value figure"> 
-                      -60.00
+                     <span>&#8358;</span>-60.00
                   </p>
               </div> 
           </div>
@@ -126,8 +125,7 @@
             <div class="total-figure flex-row">
                 <p id="payment-accept-total">TOTAL:</p>
                 <div class="price payment-section"> 
-                  <img class="naira-image" src="/naira-image.jpg">    
-                  <p class="payment-accept-text">2556.64</p>
+                  <p class="payment-accept-text"> <span>&#8358;</span>2556.64</p>
               </div> 
             </div>
         </div>
@@ -176,8 +174,9 @@ input:focus, textarea:focus, select:focus, button:focus{
 .sub-menu p{
   margin: 20px;
   font-size: 17px;
-  color:#03112cfd;
-  /* font-weight: 550; */
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 550;
+  color:#052a75fd;
 }
 
 .profile-image{
@@ -201,6 +200,7 @@ input:focus, textarea:focus, select:focus, button:focus{
 
 .payment-title{
   font-size: 18px;
+  font-weight: 550;
 }
 
 .payment-subtitle{
@@ -238,7 +238,7 @@ input:focus, textarea:focus, select:focus, button:focus{
 }
 
 .paypal-radio-button{
-  margin: 30px 0px 0px 0px;  
+  margin: 26px 0px 0px 0px;  
 }
 
 .paypal-image{
@@ -285,6 +285,14 @@ input:focus, textarea:focus, select:focus, button:focus{
   display: flex;
 }
 
+.card-radio-button{
+
+}
+
+.card-info{
+  margin: 2px 0px 10px 10px;
+}
+
 .first-input-field{
   /* margin: 20px 0px 15px 0px; */
 }
@@ -320,7 +328,8 @@ input:focus, textarea:focus, select:focus, button:focus{
 }
 
 .light-text{
-  color: hsla(0, 0%, 83%, 0.836);
+  color: hsla(0, 1%, 63%, 0.836);
+  margin-left: 5px;
 }
 
 .payment-accept-section{
@@ -330,7 +339,7 @@ input:focus, textarea:focus, select:focus, button:focus{
 }
 
 .payment-accept-section p{
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
 }
 
@@ -339,8 +348,10 @@ input:focus, textarea:focus, select:focus, button:focus{
   color: white;
   width: 200px;
   height: 44px;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
-  background: hsl(226, 78%, 42%);
+  font-weight: 500;
+  background: hsl(226, 76%, 48%);
   border-color:#1A48E2;
   border-width: 0px;
   border-radius: 0px;
