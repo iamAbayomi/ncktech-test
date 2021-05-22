@@ -32,12 +32,12 @@
               <img src="" alt="Credit Card image">
             </div>
             <div class="card-details">
-                <div id="payment-type">
+                <div class="payment-type">
                     <img src="" alt="Visa">
-                    <img src="" alt="Discover">
+                    <img class="payment-logo" src="/discover-logo.png" alt="Discover">
                     <img class="payment-logo" src="/paypal-logo.svg" alt="PayPal">
                 </div>
-                <div id="card-input-details">
+                <div class="card-input-details">
                     <form action="/card-details">
                       <div>
                         <label for="credit-card-no">Credit Card Number</label>
@@ -153,6 +153,25 @@ export default {
 .payment-information-section{
   display: flex;
   justify-content: space-between;
+}
+
+.payment-type{
+  float: right;
+  border: solid 1px;
+}
+
+.payment-logo{
+  /* height: 50px; */
+  margin: 10px;
+  width: 40px;
+}
+
+.card-type{
+  clear: both;
+}
+
+.card-input-details{
+  clear: both;
 }
 
 .flex-row{
